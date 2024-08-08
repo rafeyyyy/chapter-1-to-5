@@ -249,6 +249,222 @@ document.write("Total cost to buy " + ticketNum + "tickets to a movies is " + fi
 
 
 
+//Q4; Write a script to display multiplication table of any number in your browser.
+var number = 4;
+
+// Print the multiplication table for the number from 1 to 10
+console.log(number + " x 1 = " + (number * 1));
+console.log(number + " x 2 = " + (number * 2));
+console.log(number + " x 3 = " + (number * 3));
+console.log(number + " x 4 = " + (number * 4));
+console.log(number + " x 5 = " + (number * 5));
+console.log(number + " x 6 = " + (number * 6));
+console.log(number + " x 7 = " + (number * 7));
+console.log(number + " x 8 = " + (number * 8));
+console.log(number + " x 9 = " + (number * 9));
+console.log(number + " x 10 = " + (number * 10)); // ANS 4...
+
+
+
+
+/*Q4: The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here.
+    a. Store a Celsius temperature into a variable.
+    b. Convert it to Fahrenheit & output “NNoC is NNoF”.
+    c. Now store a Fahrenheit temperature into a variable.
+    d. Convert it to Celsius & output “NNoF is NNoC”. */
+
+
+var celsius = 30;
+
+var fahrenheit = (celsius * 9/5) + 32;
+console.log(celsius + "°C is " + fahrenheit + "°F");
+
+var fahrenheitTemp = 86;
+
+var celsiusTemp = (fahrenheitTemp - 32) * 5/9;
+console.log(fahrenheitTemp + "°F is " + celsiusTemp + "°C"); // ANS 4...
+
+
+
+
+/* Q5: Write a program to implement checkout process of a
+shopping cart system for an e-commerce website. Store
+the following in variables
+
+    a. Price of item 1
+    b. Price of item 2
+    c. Ordered quantity of item 1
+    d. Ordered Quantity of item 2
+    e. Shipping charges
+
+Compute the total cost & show the receipt in your browser. */
+
+// a. Price of item 1
+var priceItem1 = 50;
+
+// b. Price of item 2
+var priceItem2 = 30;
+
+// c. Ordered quantity of item 1
+var quantityItem1 = 3;
+
+// d. Ordered quantity of item 2
+var quantityItem2 = 2;
+
+// e. Shipping charges
+var shippingCharges = 10;
+
+// Calculate the total cost
+var totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
+
+
+console.log("Receipt:");
+console.log("Price of item 1: $" + priceItem1);
+console.log("Quantity of item 1: " + quantityItem1);
+console.log("Price of item 2: $" + priceItem2);
+console.log("Quantity of item 2: " + quantityItem2);
+console.log("Shipping charges: $" + shippingCharges);
+console.log("Total cost: $" + totalCost); // ANS 5...
+
+
+
+// Q6: Store total marks & marks obtained by a student in 2 variables. Compute the percentage & show the result in your browser
+
+// Store total marks in a variable
+var totalMarks = 500;
+
+// Store marks obtained by the student in a variable
+var marksObtained = 420;
+
+// Compute the percentage
+var percentage = (marksObtained / totalMarks) * 100;
+
+// Display the result in the browser console
+console.log("Total Marks: " + totalMarks);
+console.log("Marks Obtained: " + marksObtained);
+console.log("Percentage: " + percentage + "%"); // ANS 6...
+
+
+//Q7: Assume we have 10 US dollars & 25 Saudi Riyals. Write a script to convert the total currency to Pakistani Rupees. Perform all calculations in a single expression. (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee and 1 Saudi Riyal = 28 Pakistani Rupee)
+
+
+var usDollars = 10;
+var saudiRiyals = 25;
+
+var usdToPkr = 104.80;
+var riyalToPkr = 28;
+
+
+var totalPkr = (usDollars * usdToPkr) + (saudiRiyals * riyalToPkr);
+
+console.log("Total in Pakistani Rupees: " + totalPkr); // ANS 7...
+
+
+
+
+/*Q8: Write a program to initialize a variable with some number and do arithmetic in following sequence:
+    a. Add 5
+    b. Multiply by 10
+    c. Divide the result by 2
+Perform all calculations in a single expression */
+
+var initialNumber = 20;
+
+var result = ((initialNumber + 5) * 10) / 2;
+
+console.log("Initial number: " + initialNumber);
+console.log("Result after arithmetic operations: " + result); // ANS 8...
+
+
+
+/*Q9: The Age Calculator: Forgot how old someone is? Calculate it!
+    a. Store the current year in a variable.
+    b. Store their birth year in a variable.
+    c. Calculate their 2 possible ages based on the stored
+    values.
+
+    Output them to the screen like so: “They are either NN or NN
+    years old”. */
+
+
+var currentYear = 2024;
+
+
+var birthYear = 1990;
+
+
+var ageThisYear = currentYear - birthYear;
+var ageLastYear = ageThisYear - 1;
+
+
+console.log("They are either " + ageLastYear + " or " + ageThisYear + " years old."); // ANS 9...
+
+
+/*Q11: The Geometrizer: Calculate properties of a circle.
+    a. Store a radius into a variable.
+    b. Calculate the circumference based on the radius, and
+    output “The circumference is NN”.
+    (Hint : Circumference of a circle = 2 π r , π = 3.142)
+    Calculate the area based on the radius, and output “The
+    area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+*/
+
+
+var radius = 7; // You can change this value to any other radius
+
+
+var pi = 3.142; 
+var circumference = 2 * pi * radius;
+
+
+console.log("The circumference is " + circumference);
+
+// Calculate the area based on the radius
+var area = pi * radius * radius;
+
+
+console.log("The area is " + area); // ANS 11...
+
+
+
+
+/*Q13: The Lifetime Supply Calculator: Ever wonder how much a “lifetime supply” of your favorite snack is? Wonder no more.
+    a. Store your favorite snack into a variable
+    b. Store your current age into a variable.
+    c. Store a maximum age into a variable.
+    d. Store an estimated amount per day (as a number).
+    e. Calculate how many would you eat total for the rest of
+    your life.
+
+    Output the result to the screen like so: “You will need
+    NNNN to last you until the ripe old age of NN”.
+*/
+
+
+var favoriteSnack = "chips";
+
+
+var currentAge = 25; // You can change this value to your current age
+
+
+var maximumAge = 80; // You can change this value to your expected maximum age
+
+
+var dailyAmount = 2; // You can change this value to the estimated amount of snack consumed per day
+
+
+var yearsLeft = maximumAge - currentAge;
+var totalAmount = yearsLeft * 365 * dailyAmount; // Assuming 365 days in a year
+
+
+console.log("You will need " + totalAmount + " " + favoriteSnack + " to last you until the ripe old age of " + maximumAge + "."); // ANS 13...
+
+
+
+
+
+
+
 
 
 
